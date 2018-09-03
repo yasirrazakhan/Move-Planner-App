@@ -40,7 +40,7 @@ $.getJSON(nytimesUrl, function (data) {
 
 var wikiRequestTimeout = setTimeout(function(){
   $wikiElem.text("Failed to get wikipedia resources");
-}8000);
+},8000);
  var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search= '+ cityAdd + '&format=json&callback=wikiCallback';
  $.ajax({
    url:wikiUrl,
